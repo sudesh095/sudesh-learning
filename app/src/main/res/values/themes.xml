@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Sudesh.Learning" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#6650a4</item>
+    </style>
+
+    <style name="Theme.Sudesh.Splash" parent="Theme.SplashScreen">
+        <!-- Background color -->
+        <item name="windowSplashScreenBackground">#6650a4</item>
+
+        <!-- Splash icon (use your app logo or launcher icon) -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+
+        <!-- Optional duration for icon animation -->
+        <item name="windowSplashScreenAnimationDuration">300</item>
+
+        <!-- Theme to apply AFTER splash -->
+        <item name="postSplashScreenTheme">@style/Theme.Sudesh.Learning</item>
+    </style>
+</resources>
