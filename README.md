@@ -30,18 +30,19 @@ This is a sample Android app demonstrating MVVM with Clean Architecture using mu
 ![Architecture Diagram](https://github.com/user-attachments/assets/70a99b36-79d5-4541-b1e6-a42dda15628f)
 
 ## Architecture OverView
-┌──────────────┐
-│   Presentation│ (Compose UI, ViewModels)
-└───────▲──────┘
-│
-┌───────┴──────┐
-│    Domain     │ (UseCases, Business Logic, Interfaces)
-└───────▲──────┘
-│
-┌───────┴──────┐
-│     Data      │ (RepositoriesImpl, API, DB, DTOs)
-└──────────────┘
-
+```text
+┌─────────────────────────────┐
+│       Presentation          │  (Compose UI, ViewModels)
+└───────────────▲─────────────┘
+                │
+┌───────────────┴─────────────┐
+│          Domain              │  (UseCases, Business Logic, Interfaces)
+└───────────────▲─────────────┘
+                │
+┌───────────────┴─────────────┐
+│            Data              │  (Repositories Impl, Retrofit API, DB, DTOs)
+└─────────────────────────────┘
+```
 
 ### Prerequisites
 - Android Studio **Ladybug | 2024.2.1** or later
